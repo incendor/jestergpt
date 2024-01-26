@@ -1,15 +1,12 @@
 
 const { app, BrowserWindow } = require('electron')
 
-const createWindow = () => {
-    const win = new BrowserWindow({
-        width: 800,
-        height: 600
-    })
+const WindowManager = require('./services/windowManager.js')
+const GameManager = require('./services/gameManager.js')
 
-    win.loadFile('index.html')
-}
 
 app.whenReady().then(() => {
-    createWindow()
+    var mgr = new WindowManager();
+    var game = new GameManager(mgr);
+    game.StartGame();
 })
