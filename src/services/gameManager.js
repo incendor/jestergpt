@@ -57,5 +57,8 @@ module.exports = class GameManager {
         this.IPC.on("drawMissingCards", async (event, data) => {
             event.returnValue = await this.PromptManager.DrawMissingCards(data);
         });
+        this.IPC.on("scorePrompt", async (event, data) => {
+            event.returnValue = await this.PromptManager.ScorePrompt(data);
+        });
     }
 }

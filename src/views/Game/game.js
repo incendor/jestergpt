@@ -3,6 +3,10 @@ let playedCards = [{ text: "bla", type: "noun" }];
 let drawnCards = [];
 let points = 0;
 
+let submitButton = document.getElementById("submit-prompt");
+
+submitButton.addEventListener("click", () => submitPrompt());
+
 getPrompt();
 drawCards();
 
@@ -51,4 +55,9 @@ function drawCards() {
 
 function renderCards() {
 
+}
+
+function submitPrompt() {
+    let prompt = document.getElementById("test_prompt").value;
+    let score = GetPromptScore(prompt);
 }

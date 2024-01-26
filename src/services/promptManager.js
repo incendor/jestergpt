@@ -1,8 +1,10 @@
 
 module.exports = class PromptManager {
-    constructor() {
+    constructor(gptManager) {
+        this.GptManager = gptManager;
     }
 
+    GptManager = null;
     prompts = require('../resources/json/prompts.json');
     config = require('../resources/json/generalConfig.json');
 
@@ -68,4 +70,7 @@ module.exports = class PromptManager {
         return count;
     }
 
+    ScorePrompt(prompt) {
+        console.log(prompt);
+    }
 }

@@ -31,3 +31,7 @@ function GetNewPrompt() {
 function DrawMissingCards(currentCards) {
     return ipc.sendSync('drawMissingCards', currentCards);
 }
+
+function GetPromptScore(prompt) {
+    return ipc.sendSync('scorePrompt', prompt);
+}
