@@ -5,16 +5,29 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="../eventDispatcher.js"></script>
     <title>Hello World! Test</title>
 </head>
 
 <body>
-    <div>
-        <div><button id="btn_start">Start</button></div>
-        <div><button id="btn_api_key">API Key</button></div>
-        <div><button id="btn_quit">Quit</button></div>
+    <div class="game-wrapper">
+        <div class="game-view--menu">
+            <div class="game-view--menu--background"></div>
+            <div class="game-view--menu--ui">
+                <div class="game-view--menu--ui--logo">
+                    <img src="../../resources/images/logo.png" />
+                </div>
+                <div class="game-view--menu--ui--start">
+                    <button id="btn_start">Start</button>
+                </div>
+                <div class="game-view--menu--ui--bottombar">
+                    <div><button id="btn_api_key">API Key</button></div>
+                    <div><button id="btn_quit">Quit</button></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 
