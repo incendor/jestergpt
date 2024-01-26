@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^28.2.0"
+  },
+  "dependencies": {
+    "node-persist": "^4.0.1"
   }
 }

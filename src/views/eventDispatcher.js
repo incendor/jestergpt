@@ -15,15 +15,12 @@ function dispatchCustomEvent(eventName, data) {
         jsonData: data,
     };
 
-    // console.log(customEventData);
-
-    // var event = new CustomEvent("gameEvent", {
-    //     bubbles: true,
-    //     detail: customEventData,
-    // });
-
-
     ipc.send("gameEvent", customEventData);
 }
 
+
+function getApiKey() {
+    console.log("ree");
+    return ipc.sendSync('getApiKey', {})
+}
 
