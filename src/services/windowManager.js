@@ -16,6 +16,8 @@ module.exports = class WindowManager {
                 contextIsolation: false,
             }
         });
+
+        this.win.maximize();
     }
 
     LoadMenu() {

@@ -1,23 +1,20 @@
 const { app } = require('electron')
 
 module.exports = class GameManager {
-    constructor(windowManager, configManager) {
+    constructor(windowManager, configManager, promptManager) {
         this.WindowManager = windowManager;
         this.ConfigManager = configManager;
+        this.PromptManager = promptManager;
         this.IPC = require('electron').ipcMain;
     }
 
     IPC = null;
     WindowManager = null;
     ConfigManager = null;
+    PromptManager = null;
 
     StartGame() {
-        this.IPC.on("gameEvent", (event, data) => {
-            this.HandleGameEvent(event, data);
-        });
-        this.IPC.on("getApiKey", async (event, data) => {
-            event.returnValue = await this.ConfigManager.GetApiKey();
-        });
+        this.RegisterIPC();
         this.WindowManager.CreateWindow();
         this.WindowManager.LoadMenu();
     }
@@ -45,5 +42,20 @@ module.exports = class GameManager {
         console.log(data);
         await this.ConfigManager.SetApiKey(data);
         this.WindowManager.LoadScene("MainMenu");
+    }
+
+    RegisterIPC() {
+        this.IPC.on("gameEvent", (event, data) => {
+            this.HandleGameEvent(event, data);
+        });
+        this.IPC.on("getApiKey", async (event, data) => {
+            event.returnValue = await this.ConfigManager.GetApiKey();
+        });
+        this.IPC.on("getNewPrompt", async (event, data) => {
+            event.returnValue = await this.PromptManager.GetNewPrompt();
+        });
+        this.IPC.on("drawMissingCards", async (event, data) => {
+            event.returnValue = await this.PromptManager.DrawMissingCards(data);
+        });
     }
 }

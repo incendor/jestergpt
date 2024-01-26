@@ -24,3 +24,10 @@ function getApiKey() {
     return ipc.sendSync('getApiKey', {})
 }
 
+function GetNewPrompt() {
+    return ipc.sendSync('getNewPrompt', {})
+}
+
+function DrawMissingCards(currentCards) {
+    return ipc.sendSync('drawMissingCards', currentCards);
+}

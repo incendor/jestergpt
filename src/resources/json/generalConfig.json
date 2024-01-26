@@ -1,0 +1,20 @@
+{
+    "totalCards": 7,
+    "cardTypes": [
+        {
+            "file": "nouns.json",
+            "minAmount": 2,
+            "id": "noun"
+        },
+        {
+            "file": "verbs.json",
+            "minAmount": 2,
+            "id": "verb"
+        },
+        {
+            "file": "adjectives.json",
+            "minAmount": 2,
+            "id": "adjective"
+        }
+    ]
+}
