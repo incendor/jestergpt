@@ -18,18 +18,19 @@ function renderPrompt() {
     let promptIndex = 0;
 
     for (let item of currentPrompt) {
-        let itemDiv = document.createElement("div");
-        itemDiv.classList.add("game-view--game--ui--promt--element")
 
         let blankDiv = document.createElement("div");
         blankDiv.classList.add("game-view--game--ui--promt--element")
         blankDiv.classList.add("game-view--game--ui--promt--blank");
 
 
+        for (let strSay of item.split(' ')) {
+            let itemDiv = document.createElement("div");
+            itemDiv.classList.add("game-view--game--ui--promt--element")
+            itemDiv.innerHTML = strSay;
+            promptDisplay.append(itemDiv);
+        }
 
-        itemDiv.innerHTML = item;
-
-        promptDisplay.append(itemDiv);
         if (item != currentPrompt[currentPrompt.length - 1]) {
             if (playedCards.length > promptIndex) {
                 blankDiv.innerHTML = playedCards[promptIndex].text;
@@ -63,7 +64,7 @@ function renderCards() {
         cardMarkup.innerText = playerCards[card].text;
         cardsMarkup.append(cardMarkup);
 
-        cardMarkup.addEventListener("click", (e) => playCard(card));
+        cardMarkup.addEventListener("click", (e) => playCard(card, cardMarkup));
     }
 
     if (document.querySelector('#game-view--game--ui--cards')) {
@@ -78,7 +79,7 @@ function submitPrompt() {
 }
 
 
-function playCard(cardIndex) {
+function playCard(cardIndex, cardWrapper) {
     // Prüfen ob alle Lücken gefüllt
     if (currentPrompt.length - 2 < playedCards.length) {
         return;
@@ -88,7 +89,17 @@ function playCard(cardIndex) {
     playedCards.push(cardToPlay);
     playerCards.splice(cardIndex, 1);
 
-    renderUi();
+    // renderUi();
+
+    cardWrapper.style.opacity = 0;
+    cardWrapper.style.width = "0";
+    cardWrapper.style.margin = "-0 -20px";
+
+    setTimeout(() => {
+        cardWrapper.remove();
+    }, 300);
+
+    renderPrompt();
 }
 
 function removePlayedCards() {

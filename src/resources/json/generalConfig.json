@@ -3,17 +3,17 @@
     "cardTypes": [
         {
             "file": "nouns.json",
-            "minAmount": 2,
+            "minAmount": 3,
             "id": "noun"
         },
         {
             "file": "verbs.json",
-            "minAmount": 2,
+            "minAmount": 1,
             "id": "verb"
         },
         {
             "file": "adjectives.json",
-            "minAmount": 2,
+            "minAmount": 1,
             "id": "adjective"
         }
     ]
