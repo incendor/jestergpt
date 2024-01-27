@@ -16,6 +16,7 @@ function getPrompt() {
 function renderPrompt() {
     let promptDisplay = document.createElement("div");
     promptDisplay.id = "game-view--game--ui--promt";
+    promptDisplay.classList.add("letter")
     let promptIndex = 0;
 
     for (let item of currentPrompt) {
