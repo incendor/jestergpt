@@ -61,7 +61,7 @@ module.exports = class PromptManager {
     CountCardTypes(cardsToCount, type) {
         let count = 0;
 
-        for (card in cardsToCount) {
+        for (let card of cardsToCount) {
             if (card.type == type) {
                 count++;
             }

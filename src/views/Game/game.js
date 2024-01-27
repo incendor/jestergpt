@@ -2,10 +2,11 @@ let currentPrompt = [];
 let playedCards = [];
 let playerCards = [];
 let points = 0;
+let king = document.getElementById("king");
+let totalThinkingTime = 2500;
+let totalAngyTime = 2500;
 
-getPrompt();
-drawCards();
-renderUi();
+reset();
 
 function getPrompt() {
     currentPrompt = GetNewPrompt();
@@ -94,10 +95,6 @@ function renderCards() {
     document.querySelector('.game-view--game--ui').append(cardsMarkup);
 }
 
-function submitPrompt() {
-    let prompt = document.getElementById("test_prompt").value;
-    let result = GetPromptScore(prompt);
-}
 
 
 function playCard(cardIndex, cardWrapper) {
@@ -136,4 +133,90 @@ function removePlayedCards() {
 function renderUi() {
     renderPrompt();
     renderCards();
+}
+
+function getPromptString() {
+    let promptString = "";
+    let promptIndex = 0;
+
+    for (let item of currentPrompt) {
+
+        promptString += item.trim() + " ";
+
+        if (item != currentPrompt[currentPrompt.length - 1]) {
+            if (playedCards.length > promptIndex) {
+                promptString += playedCards[promptIndex].text.trim() + " ";
+                promptIndex++;
+            }
+        }
+    }
+    return promptString.trim();
+}
+
+function submitPrompt() {
+    // let swatch = new Stopwatch();
+    // swatch.start();
+    showAnimThink();
+
+    let time = performance.now();
+
+    let prompt = getPromptString();
+    console.log("Evaluating:" + prompt);
+
+    let result = GetPromptScore(prompt);
+    console.log(result);
+
+    let time2 = performance.now();
+    let elapsed = time2 - time;
+    let remain = totalThinkingTime - elapsed;
+    console.log(remain);
+
+    if (remain > 0) {
+        setTimeout(() => evalScore(result), remain);
+    }
+    else {
+        evalScore(result);
+    }
+}
+
+function evalScore(score) {
+    if (score.isFunny) {
+        showAnimLaught();
+    }
+    else {
+        showAnimAngy();
+    }
+
+    setTimeout(() => reset(), totalAngyTime)
+}
+
+function reset() {
+    console.log("reset");
+    showAnimIdle();
+
+    playedCards = [];
+
+    getPrompt();
+    drawCards();
+    renderUi();
+}
+
+function showAnimIdle() {
+    console.log("Idle");
+    king.src = '../../resources/images/king_idle.gif';
+}
+
+function showAnimAngy() {
+    console.log("Angy");
+    king.src = '../../resources/images/king_big_angry.gif';
+}
+
+function showAnimThink() {
+    console.log("Thinking");
+    king.src = '../../resources/images/king_big_angry.gif';
+}
+
+function showAnimLaught() {
+    console.log("Laught");
+    king.src = '../../resources/images/king_big_angry.gif';
 }
