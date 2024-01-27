@@ -262,7 +262,7 @@ function showAnimLaught() {
 
     if (randomNumber < 0.33) {
         king.src = '../../resources/images/king_smile.gif';
-        playAudioFile("laugh1");
+        playAudioFile("laugh1", "evil_laught");
     }
     else if (randomNumber > 0.5) {
         king.src = '../../resources/images/king_funny_af.gif';
