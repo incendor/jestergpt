@@ -18,12 +18,12 @@
         gap: 10px
         display: flex
         .game-view--game--background--life--dude
-            background-color: blue
+            background-image: url('../resources/images/scoreDudePos.png')
+            background-size: contain
             height: 200px
             width: 100px
             &.upset
-                background-color: red
-
+                background-image: url('../resources/images/scoreDudeNeg.png')
 .game-view--game--ui
     overflow: clip
     position: relative
@@ -45,6 +45,13 @@
         flex-wrap: wrap
         padding-bottom: 70px
         position: relative
+        .game-view--game--ui--promt--rounds
+            font-size: 18px
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+
         button
             border: none
             background: transparent

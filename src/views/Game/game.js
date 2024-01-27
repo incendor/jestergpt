@@ -56,7 +56,11 @@ function renderPrompt() {
     submitButtne.disabled = true;
     submitButton = submitButtne;
 
+    let roundsToGoCounter = document.createElement("div");
+    roundsToGoCounter.classList.add('game-view--game--ui--promt--rounds')
+    roundsToGoCounter.innerHTML = "Remaining jokes to tell: " + remainingRounds;
 
+    promptDisplay.append(roundsToGoCounter);
     promptDisplay.append(resetButtne);
     promptDisplay.append(submitButtne);
 

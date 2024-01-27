@@ -123,12 +123,13 @@ body button.image-button img {
   display: flex;
 }
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude {
-  background-color: blue;
+  background-image: url("../resources/images/scoreDudePos.png");
+  background-size: contain;
   height: 200px;
   width: 100px;
 }
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude.upset {
-  background-color: red;
+  background-image: url("../resources/images/scoreDudeNeg.png");
 }
 
 .game-view--game--ui {
@@ -153,6 +154,13 @@ body button.image-button img {
   flex-wrap: wrap;
   padding-bottom: 70px;
   position: relative;
+}
+.game-view--game--ui #game-view--game--ui--promt .game-view--game--ui--promt--rounds {
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .game-view--game--ui #game-view--game--ui--promt button {
   border: none;
