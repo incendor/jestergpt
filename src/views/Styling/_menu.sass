@@ -26,4 +26,18 @@
         .game-view--menu--ui--bottombar
             display: flex
             justify-content: space-between
-            width: 100%
+            width: 90%
+#btn_api_key
+    transition: all 0.3s ease
+    height:94px
+    width: 90px
+    background-image: url(../resources/images/cog.png)
+    &:hover
+        transform: rotate(20deg)
+
+#btn_quit
+    transform: scaleX(-1)
+    height:100px
+    background-image: url(../resources/images/door_closed.png)
+    &:hover
+        background-image: url(../resources/images/door_open.png)

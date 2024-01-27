@@ -5,7 +5,40 @@ body .game-wrapper {
   height: 100vh;
   width: 100vw;
 }
+body button {
+  cursor: pointer;
+}
+body button.icon-button {
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border: none;
+}
+body button.image-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+body button.image-button:hover {
+  transform: scale(1.3);
+}
+body button.image-button img {
+  width: 200px;
+  animation: rotation 5s infinite ease;
+}
 
+@keyframes rotation {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
 .game-view--menu {
   height: 100vh;
   width: 100vw;
@@ -39,7 +72,26 @@ body .game-wrapper {
 .game-view--menu .game-view--menu--ui .game-view--menu--ui--bottombar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
+}
+
+#btn_api_key {
+  transition: all 0.3s ease;
+  height: 94px;
+  width: 90px;
+  background-image: url(../resources/images/cog.png);
+}
+#btn_api_key:hover {
+  transform: rotate(20deg);
+}
+
+#btn_quit {
+  transform: scaleX(-1);
+  height: 100px;
+  background-image: url(../resources/images/door_closed.png);
+}
+#btn_quit:hover {
+  background-image: url(../resources/images/door_open.png);
 }
 
 /*# sourceMappingURL=style.css.map */

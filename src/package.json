@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "node-fetch": "^2.7.0",
-    "node-persist": "^4.0.1"
+    "node-persist": "^4.0.1",
+    "sass": "1.70.0"
   }
 }
