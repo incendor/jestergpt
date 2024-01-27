@@ -49,7 +49,7 @@ body button.image-button img {
   width: 100vw;
 }
 .game-view--menu .game-view--menu--background {
-  background: url("../resources/images/throneroom.png") no-repeat center center fixed;
+  background: url("../resources/images/background.gif") no-repeat center center fixed;
   background-size: cover;
   filter: blur(10px);
   height: 100vh;
@@ -100,7 +100,7 @@ body button.image-button img {
 }
 
 .game-view--game--background {
-  background: url("../resources/images/throneroom.png") no-repeat center center fixed;
+  background: url("../resources/images/background.gif") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -135,18 +135,34 @@ body button.image-button img {
   width: 400px;
   gap: 5px;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   position: relative;
 }
 .game-view--game--ui #game-view--game--ui--promt button {
-  background-color: none;
-  width: 30px;
-  height: 30px;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
   position: absolute;
+  transition: all 0.3s ease;
 }
 .game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--rest {
-  left: 5px;
-  bottom: 5px;
+  background-image: url("../resources/images/undo_arrow.png");
+  background-size: contain;
+  left: 10px;
+  bottom: 10px;
+}
+.game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--rest:hover {
+  transform: rotate(-20deg);
+}
+.game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit {
+  background-image: url("../resources/images/send_closed.png");
+  background-size: contain;
+  right: 10px;
+  bottom: 10px;
+}
+.game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit:hover {
+  background-image: url("../resources/images/send_open.png");
 }
 .game-view--game--ui #game-view--game--ui--promt .game-view--game--ui--promt--blank {
   width: 100px;
