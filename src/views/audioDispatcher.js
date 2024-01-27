@@ -1,5 +1,8 @@
 let introTheme = null;
 let mainTheme = null;
+let playCardSoundHandle = new Audio('../../resources/audio/play_card.mp3');
+let undoSoundHandle = new Audio('../../resources/audio/undo.mp3');
+let thinkingSoundHandle = new Audio('../../resources/audio/thinking.mp3');
 
 if (mainTheme == null) {
     mainTheme = new Audio('../../resources/audio/main_theme.mp3');
@@ -20,4 +23,17 @@ function addAudioEventListener() {
         mainTheme.loop = true;
         mainTheme.play();
     });
+}
+
+function playPlayCardSound() {
+    console.log("Sound");
+    playCardSoundHandle.play();
+}
+
+function playUndoSound() {
+    undoSoundHandle.play();
+}
+
+function playThinkingSound() {
+    thinkingSoundHandle.play();
 }

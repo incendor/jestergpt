@@ -7,6 +7,7 @@ let submitButton = null;
 let totalThinkingTime = 2500;
 let totalAngyTime = 2500;
 
+
 reset();
 
 function getPrompt() {
@@ -108,6 +109,7 @@ function checkSubmitButtonState() {
 }
 
 function playCard(cardIndex, cardWrapper) {
+    playPlayCardSound();
     // Prüfen ob alle Lücken gefüllt
     if (currentPrompt.length - 2 < playedCards.length) {
         return;
@@ -133,6 +135,7 @@ function playCard(cardIndex, cardWrapper) {
 }
 
 function removePlayedCards() {
+    playUndoSound();
     for (playedCard of playedCards) {
         playerCards.push(playedCard);
     }
@@ -232,6 +235,7 @@ function showAnimAngy() {
 }
 
 function showAnimThink() {
+    playThinkingSound();
     console.log("Thinking");
     king.src = '../../resources/images/king_think.gif';
 }

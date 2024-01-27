@@ -13,14 +13,19 @@ module.exports = class GptManager {
         data.append("inputs", say);
         data.append("wait_for_model", true);
 
-        let authHeader = 'Bearer ' + await this.Config.GetApiKey();
+        let apiKey = await this.Config.GetApiKey();
+        let authHeader = null;
+        let headerData = new Headers();
+
+        if (apiKey !== null && apiKey !== '') {
+            headerData.append("Authorization", 'Bearer ' + apiKey)
+        }
+
 
         let response = await this.fetch('https://api-inference.huggingface.co/models/mohameddhiab/humor-no-humor', {
             method: "post",
             body: data,
-            headers: new Headers({
-                'Authorization': authHeader
-            }),
+            headers: headerData,
         });
 
         let json = await response.json();
