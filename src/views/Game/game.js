@@ -201,6 +201,7 @@ function submitPrompt() {
 function evalScore(score) {
     if (score.isFunny) {
         showAnimLaught();
+        remainingRounds = remainingRounds - 1;
     }
     else {
         remainingLifes = remainingLifes - 1;
@@ -212,9 +213,6 @@ function evalScore(score) {
 
 function nextRound() {
     showAnimIdle();
-
-    remainingRounds = remainingRounds - 1;
-    console.log("Remaining Rounds:" + remainingRounds);
 
     if (remainingLifes == 0) {
         lose();
