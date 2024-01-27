@@ -11,7 +11,6 @@ reset();
 
 function getPrompt() {
     currentPrompt = GetNewPrompt();
-    console.log(currentPrompt);
 }
 
 function renderPrompt() {
@@ -177,6 +176,7 @@ function submitPrompt() {
     console.log("Evaluating:" + prompt);
 
     let result = GetPromptScore(prompt);
+    console.log(result);
 
     let time2 = performance.now();
     let elapsed = time2 - time;
@@ -238,5 +238,14 @@ function showAnimThink() {
 
 function showAnimLaught() {
     console.log("Laught");
-    king.src = '../../resources/images/king_funny_af.gif';
+
+    let randomNumber = Math.random();
+
+    if (randomNumber < 0.33) {
+        king.src = '../../resources/images/king_smile.gif';
+    }
+    else if (randomNumber > 0.5) {
+        king.src = '../../resources/images/king_funny_af.gif';
+    }
+
 }

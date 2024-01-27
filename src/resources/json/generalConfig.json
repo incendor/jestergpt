@@ -1,7 +1,7 @@
 {
     "totalCards": 7,
     "debugMode": true,
-    "sadThreshhold": 0.8,
+    "sadThreshhold": 0.65,
     "cardTypes": [
         {
             "file": "nouns.json",
