@@ -217,6 +217,7 @@ body button.image-button img {
 }
 .game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:hover {
   transform: scale(1.3);
+  z-index: 6;
 }
 
 .letter {
