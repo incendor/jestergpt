@@ -35,3 +35,11 @@ function DrawMissingCards(currentCards) {
 function GetPromptScore(prompt) {
     return ipc.sendSync('scorePrompt', prompt);
 }
+
+function GetGameConfig() {
+    return ipc.sendSync('gameConfig', {});
+}
+
+function NavigateTo(page) {
+    dispatchCustomEvent("changeScene", { scene: page });
+}

@@ -2,6 +2,8 @@
     "totalCards": 7,
     "debugMode": true,
     "sadThreshhold": 0.5,
+    "liveAmount": 3,
+    "maxRounds": 6,
     "cardTypes": [
         {
             "file": "nouns.json",

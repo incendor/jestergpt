@@ -62,5 +62,8 @@ module.exports = class GameManager {
         this.IPC.on("scorePrompt", async (event, data) => {
             event.returnValue = await this.PromptManager.ScorePrompt(data);
         });
+        this.IPC.on("gameConfig", (event, data) => {
+            event.returnValue = require('../resources/json/generalConfig.json');
+        });
     }
 }

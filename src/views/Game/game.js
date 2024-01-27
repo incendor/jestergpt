@@ -6,9 +6,11 @@ let king = document.getElementById("king");
 let submitButton = null;
 let totalThinkingTime = 2500;
 let totalAngyTime = 2500;
+let gameConfig = GetGameConfig();
+let remainingLifes = gameConfig.liveAmount;
+let remainingRounds = gameConfig.maxRounds;
 
-
-reset();
+nextRound();
 
 function getPrompt() {
     currentPrompt = GetNewPrompt();
@@ -148,6 +150,7 @@ function removePlayedCards() {
 function renderUi() {
     renderPrompt();
     renderCards();
+    renderLifes();
 }
 
 function getPromptString() {
@@ -196,20 +199,32 @@ function evalScore(score) {
         showAnimLaught();
     }
     else {
+        remainingLifes = remainingLifes - 1;
         showAnimAngy();
     }
 
-    setTimeout(() => reset(), totalAngyTime)
+    setTimeout(() => nextRound(), totalAngyTime)
 }
 
-function reset() {
+function nextRound() {
     showAnimIdle();
 
-    playedCards = [];
+    remainingRounds = remainingRounds - 1;
+    console.log("Remaining Rounds:" + remainingRounds);
 
-    getPrompt();
-    drawCards();
-    renderUi();
+    if (remainingLifes == 0) {
+        lose();
+    }
+    else if (remainingRounds == 0) {
+        win();
+    }
+    else {
+        playedCards = [];
+
+        getPrompt();
+        drawCards();
+        renderUi();
+    }
 }
 
 function showAnimIdle() {
@@ -252,4 +267,34 @@ function showAnimLaught() {
         playAudioFile("giggle1", "giggle2");
     }
 
+}
+
+function renderLifes() {
+    document.querySelector(".game-view--game--background--life").innerHTML = "";
+    console.log("Lifes:" + remainingLifes);
+
+    for (let index = 0; index < gameConfig.liveAmount; index++) {
+        let dude = document.createElement("div");
+        let upsetDudeCount = gameConfig.liveAmount - remainingLifes;
+
+        console.log("Upset Dudes:" + upsetDudeCount);
+
+        if (upsetDudeCount > index) {
+            dude.classList.add("upset");
+        }
+
+        dude.classList.add("game-view--game--background--life--dude");
+
+        document.querySelector(".game-view--game--background--life").append(dude);
+    }
+}
+
+function win() {
+    console.log("win");
+    NavigateTo("Win");
+}
+
+function lose() {
+    console.log("lose");
+    NavigateTo("Lose");
 }
