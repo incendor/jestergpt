@@ -41,6 +41,27 @@ function renderPrompt() {
             promptDisplay.append(blankDiv);
         }
     }
+    let resetButtne = document.createElement("button");
+    resetButtne.id = '#game-view--game--ui--promt--button--rest';
+    resetButtne.classList.add('#game-view--game--ui--promt--button');
+    resetButtne.innerText = "reset";
+
+    let submitButtne = document.createElement("button");
+    submitButtne.id = '#game-view--game--ui--promt--button--submit';
+    submitButtne.classList.add('#game-view--game--ui--promt--button');
+    submitButtne.innerText = "submit";
+
+
+    promptDisplay.append(resetButtne);
+    promptDisplay.append(submitButtne);
+
+    resetButtne.addEventListener('click', () => {
+        removePlayedCards();
+    });
+
+    submitButtne.addEventListener('click', () => {
+        submitPrompt();
+    });
 
     if (document.querySelector('#game-view--game--ui--promt')) {
         document.querySelector('#game-view--game--ui--promt').remove();
