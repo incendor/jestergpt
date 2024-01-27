@@ -16,3 +16,5 @@ mono_crash.*.json
 
 src/node_modules/*
 src/.node-persist/*
+
+src/out/*
