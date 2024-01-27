@@ -47,12 +47,12 @@ function renderPrompt() {
     let resetButtne = document.createElement("button");
     resetButtne.id = '#game-view--game--ui--promt--button--rest';
     resetButtne.classList.add('#game-view--game--ui--promt--button');
-    resetButtne.innerHTML = "<img  src='../../resources/images/undo_arrow.png'/>";
+    resetButtne.innerText = "reset";
 
     let submitButtne = document.createElement("button");
     submitButtne.id = '#game-view--game--ui--promt--button--submit';
     submitButtne.classList.add('#game-view--game--ui--promt--button');
-    submitButtne.innerHTML = "<img  src='../../resources/images/undo_arrow.png'/>";
+    submitButtne.innerText = "submit";
     submitButtne.disabled = true;
     submitButton = submitButtne;
 
