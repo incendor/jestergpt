@@ -135,6 +135,18 @@ body button.image-button img {
   width: 400px;
   gap: 5px;
   flex-wrap: wrap;
+  padding-bottom: 100px;
+  position: relative;
+}
+.game-view--game--ui #game-view--game--ui--promt button {
+  background-color: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--rest {
+  left: 5px;
+  bottom: 5px;
 }
 .game-view--game--ui #game-view--game--ui--promt .game-view--game--ui--promt--blank {
   width: 100px;

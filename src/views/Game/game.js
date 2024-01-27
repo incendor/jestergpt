@@ -45,11 +45,11 @@ function renderPrompt() {
         }
     }
     let resetButtne = document.createElement("button");
-    resetButtne.id = '#game-view--game--ui--promt--button--rest';
+    resetButtne.id = 'game-view--game--ui--promt--button--rest';
     resetButtne.classList.add('#game-view--game--ui--promt--button');
 
     let submitButtne = document.createElement("button");
-    submitButtne.id = '#game-view--game--ui--promt--button--submit';
+    submitButtne.id = 'game-view--game--ui--promt--button--submit';
     submitButtne.classList.add('#game-view--game--ui--promt--button');
     submitButtne.disabled = true;
     submitButton = submitButtne;
