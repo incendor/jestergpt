@@ -73,5 +73,7 @@ module.exports = class PromptManager {
     async ScorePrompt(prompt) {
         let result = await this.GptManager.EvaluatePrompt(prompt);
         console.log(result);
+
+        return result;
     }
 }

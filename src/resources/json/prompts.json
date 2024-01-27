@@ -1,12 +1,799 @@
 [
     [
-        "Ich mag",
-        "ganz dolle"
+        "In the royal court, it is customary to solve disputes with a duel of",
+        "."
     ],
     [
-        "Wasser ist",
-        "aber nur wenn",
-        "blabla",
-        ""
+        "The latest fashion trend in the kingdom involves wearing",
+        "as a crown."
+    ],
+    [
+        "The peasants are revolting due to a shortage of",
+        "."
+    ],
+    [
+        "The most effective method for dragon slaying is",
+        "."
+    ],
+    [
+        "The best way to impress a princess is by presenting her with",
+        "."
+    ],
+    [
+        "To prove one\u0027s loyalty, knights must swear an oath on",
+        "."
+    ],
+    [
+        "In the medieval dating game, the key to a successful courtship is",
+        "."
+    ],
+    [
+        "The new punishment for thieves is",
+        "."
+    ],
+    [
+        "The most sought-after skill in the kingdom is",
+        "."
+    ],
+    [
+        "The royal feast was ruined when someone accidentally added",
+        "to the soup."
+    ],
+    [
+        "The latest medieval sport involves jousting with",
+        "."
+    ],
+    [
+        "The secret to a powerful potion lies in the essence of",
+        "."
+    ],
+    [
+        "The most scandalous gossip in the kingdom involves the affair between",
+        "and",
+        "."
+    ],
+    [
+        "The King\u0027s favorite pastime is",
+        "."
+    ],
+    [
+        "The real reason the castle is haunted is because of",
+        "."
+    ],
+    [
+        "The Knights of the Round Table are on a quest to find the legendary",
+        "."
+    ],
+    [
+        "The peasants believe that",
+        "is a powerful charm against evil spirits."
+    ],
+    [
+        "The new kingdom currency is based on the value of",
+        "."
+    ],
+    [
+        "To win the heart of a fair maiden, one must perform a daring feat involving",
+        "."
+    ],
+    [
+        "The royal decree has banned the use of",
+        "in the kingdom."
+    ],
+    [
+        "The best way to ward off a curse is to carry a talisman made of",
+        "."
+    ],
+    [
+        "The castle wizard\u0027s favorite spell involves turning enemies into",
+        "."
+    ],
+    [
+        "The latest royal decree mandates that all citizens must learn the art of",
+        "."
+    ],
+    [
+        "The most treacherous path through the enchanted forest is guarded by",
+        "."
+    ],
+    [
+        "The kingdom\u0027s prosperity is said to be linked to the possession of",
+        "."
+    ],
+    [
+        "The royal jester entertained the court with a performance involving",
+        "."
+    ],
+    [
+        "The troubadour\u0027s latest ballad tells the tale of",
+        "and their forbidden love."
+    ],
+    [
+        "The blacksmith\u0027s secret weapon against invaders is",
+        "."
+    ],
+    [
+        "The royal banquet was interrupted when a dragon swooped down and stole",
+        "."
+    ],
+    [
+        "The key to unlocking the castle\u0027s hidden chambers is",
+        "."
+    ],
+    [
+        "The royal proclamation declared a reward for the discovery of",
+        "."
+    ],
+    [
+        "The most skilled archers in the kingdom are known for shooting",
+        "at incredible distances."
+    ],
+    [
+        "The village elder foretold a prophecy involving",
+        "and the fate of the kingdom."
+    ],
+    [
+        "The castle dungeon is notorious for its collection of forbidden",
+        "."
+    ],
+    [
+        "The mystical artifact, known as the",
+        ", grants its wielder untold power."
+    ],
+    [
+        "The newest knight in the realm earned their title by defeating a foe with",
+        "."
+    ],
+    [
+        "The most valuable trade commodity in the kingdom is",
+        "."
+    ],
+    [
+        "The court alchemist is famous for creating potions that contain traces of",
+        "."
+    ],
+    [
+        "The royal guard is equipped with",
+        "to defend against invading armies."
+    ],
+    [
+        "The forbidden love affair between a noble and a commoner was discovered when they were found with",
+        "."
+    ],
+    [
+        "The kingdom\u0027s seer predicts a future filled with",
+        "."
+    ],
+    [
+        "The castle library is said to contain a forbidden book on the secrets of",
+        "."
+    ],
+    [
+        "The most daring quest in the realm involves retrieving",
+        "from the dragon\u0027s lair."
+    ],
+    [
+        "The minstrel\u0027s latest song recounts the legendary deeds of",
+        "."
+    ],
+    [
+        "The King\u0027s banquet was elevated with the addition of a dish made with",
+        "."
+    ],
+    [
+        "The wise sage advises the young squire to seek the guidance of",
+        "on their quest."
+    ],
+    [
+        "The kingdom\u0027s curse can only be lifted by a hero armed with",
+        "."
+    ],
+    [
+        "The court jester\u0027s latest prank involved replacing the royal scepter with",
+        "."
+    ],
+    [
+        "The royal tapestries depict the epic battles between knights and",
+        "."
+    ],
+    [
+        "The most notorious bandit in the land is known for stealing",
+        "from unsuspecting travelers."
+    ],
+    [
+        "In the royal court, it is customary to solve disputes with a duel of",
+        "and",
+        "."
+    ],
+    [
+        "To prove one\u0027s loyalty, knights must swear an oath on",
+        "and",
+        "."
+    ],
+    [
+        "The latest fashion trend in the kingdom involves wearing",
+        "and",
+        "as a crown."
+    ],
+    [
+        "The most effective method for dragon slaying is",
+        "and",
+        "."
+    ],
+    [
+        "The royal decree has banned the use of",
+        "and",
+        "in the kingdom."
+    ],
+    [
+        "The castle wizard\u0027s favorite spell involves turning enemies into",
+        "and",
+        "."
+    ],
+    [
+        "The most daring quest in the realm involves retrieving",
+        "from the dragon\u0027s lair and",
+        "from the enchanted forest."
+    ],
+    [
+        "The royal banquet was interrupted when a dragon swooped down and stole",
+        "and",
+        "."
+    ],
+    [
+        "The troubadour\u0027s latest ballad tells the tale of",
+        "and",
+        "and their forbidden love."
+    ],
+    [
+        "The village elder foretold a prophecy involving",
+        "and",
+        "and the fate of the kingdom."
+    ],
+    [
+        "The newest knight in the realm earned their title by defeating a foe with",
+        "and",
+        "."
+    ],
+    [
+        "The royal guard is equipped with",
+        "and",
+        "to defend against invading armies."
+    ],
+    [
+        "The forbidden love affair between a noble and a commoner was discovered when they were found with",
+        "and",
+        "."
+    ],
+    [
+        "The mystical artifact, known as the",
+        "and",
+        ", grants its wielder untold power."
+    ],
+    [
+        "The real reason the castle is haunted is because of",
+        "and",
+        "."
+    ],
+    [
+        "The blacksmith\u0027s secret weapon against invaders is",
+        "and",
+        "."
+    ],
+    [
+        "The kingdom\u0027s curse can only be lifted by a hero armed with",
+        "and",
+        "."
+    ],
+    [
+        "The castle library is said to contain a forbidden book on the secrets of",
+        "and",
+        "."
+    ],
+    [
+        "The court alchemist is famous for creating potions that contain traces of",
+        "and",
+        "."
+    ],
+    [
+        "The wise sage advises the young squire to seek the guidance of",
+        "and",
+        "on their quest."
+    ],
+    [
+        "The royal proclamation declared a reward for the discovery of",
+        "and",
+        "."
+    ],
+    [
+        "The court jester\u0027s latest prank involved replacing the royal scepter with",
+        "and",
+        "."
+    ],
+    [
+        "The most notorious bandit in the land is known for stealing",
+        "and",
+        "from unsuspecting travelers."
+    ],
+    [
+        "The castle dungeon is notorious for its collection of forbidden",
+        "and",
+        "."
+    ],
+    [
+        "The key to unlocking the castle\u0027s hidden chambers is",
+        "and",
+        "."
+    ],
+    [
+        "The real reason cats secretly control the kingdom is",
+        "and",
+        "."
+    ],
+    [
+        "The secret society I want to be a part of is dedicated to",
+        "and",
+        "."
+    ],
+    [
+        "The King\u0027s favorite pastime is",
+        "and",
+        "."
+    ],
+    [
+        "In the medieval dating game, the key to a successful courtship is",
+        "and",
+        "."
+    ],
+    [
+        "The Knights of the Round Table are on a quest to find the legendary",
+        "and",
+        "."
+    ],
+    [
+        "The royal feast was ruined when someone accidentally added",
+        "and",
+        "to the soup."
+    ],
+    [
+        "The royal tapestries depict the epic battles between knights and",
+        "and",
+        "."
+    ],
+    [
+        "The most valuable trade commodity in the kingdom is",
+        "and",
+        "."
+    ],
+    [
+        "The village blacksmith is famous for crafting weapons made from",
+        "and",
+        "."
+    ],
+    [
+        "The latest scientific breakthrough involves harnessing the power of",
+        "and",
+        "."
+    ],
+    [
+        "The secret ingredient in the royal chef\u0027s stew is",
+        "and",
+        "."
+    ],
+    [
+        "The newest knight\u0027s armor is adorned with symbols of",
+        "and",
+        "."
+    ],
+    [
+        "The court painter\u0027s masterpiece depicts a scene of",
+        "and",
+        "."
+    ],
+    [
+        "The court minstrel\u0027s latest song recounts the legendary deeds of",
+        "and",
+        "."
+    ],
+    [
+        "The kingdom\u0027s prosperity is said to be linked to the possession of",
+        "and",
+        "."
+    ],
+    [
+        "The real reason dragons hoard gold is to trade for",
+        "and",
+        "."
+    ],
+    [
+        "The royal stable master breeds horses with the speed of",
+        "and the strength of",
+        "."
+    ],
+    [
+        "The kingdom\u0027s seer predicts a future filled with",
+        "and",
+        "."
+    ],
+    [
+        "The troubadour composed a ballad about a quest for the elusive",
+        "and",
+        "."
+    ],
+    [
+        "The castle\u0027s ghost is rumored to be searching for its lost",
+        "and",
+        "."
+    ],
+    [
+        "The best way to impress a princess is by presenting her with",
+        "and",
+        "."
+    ],
+    [
+        "The royal falconer is known for training birds to retrieve",
+        "and",
+        "."
+    ],
+    [
+        "The newest knight in the realm proved their skill by defeating a dragon with",
+        "and",
+        "."
+    ],
+    [
+        "The court jester entertained the court with a performance involving",
+        "and",
+        "."
+    ],
+    [
+        "The most notorious thief in the kingdom is known for stealing",
+        "and",
+        "from the royal treasury."
+    ],
+    [
+        "In the royal court, it is customary to solve disputes with a duel of",
+        "and",
+        ", each armed with a",
+        "weapon."
+    ],
+    [
+        "To prove one\u0027s loyalty, knights must swear an oath on",
+        "and",
+        ", pledging to be",
+        "and",
+        "."
+    ],
+    [
+        "The latest fashion trend in the kingdom involves wearing",
+        "and",
+        "as a crown while",
+        "through the castle halls."
+    ],
+    [
+        "The most effective method for dragon slaying is",
+        "and",
+        ", executed with",
+        "precision."
+    ],
+    [
+        "The royal decree has banned the use of",
+        "and",
+        "in the kingdom, deeming them too",
+        "and",
+        "."
+    ],
+    [
+        "The castle wizard\u0027s favorite spell involves turning enemies into",
+        "and",
+        ", leaving them",
+        "and",
+        "."
+    ],
+    [
+        "The most daring quest in the realm involves retrieving",
+        "from the dragon\u0027s lair and",
+        "from the enchanted forest, all while",
+        "and",
+        "."
+    ],
+    [
+        "The royal banquet was interrupted when a dragon swooped down and stole",
+        "and",
+        ", leaving chaos and",
+        "in its wake."
+    ],
+    [
+        "The troubadour\u0027s latest ballad tells the tale of",
+        "and",
+        "and their forbidden love, sung in a voice both",
+        "and",
+        "."
+    ],
+    [
+        "The village elder foretold a prophecy involving",
+        "and",
+        "and the fate of the kingdom, warning of a time both",
+        "and",
+        "."
+    ],
+    [
+        "The newest knight in the realm earned their title by defeating a foe with",
+        "and",
+        ", showcasing their",
+        "and",
+        "prowess."
+    ],
+    [
+        "The royal guard is equipped with",
+        "and",
+        "to defend against invading armies, ensuring a",
+        "and",
+        "defense."
+    ],
+    [
+        "The forbidden love affair between a noble and a commoner was discovered when they were found with",
+        "and",
+        ", leading to a scandal both",
+        "and",
+        "."
+    ],
+    [
+        "The mystical artifact, known as the",
+        "and",
+        ", grants its wielder untold power, making them",
+        "and",
+        "."
+    ],
+    [
+        "The real reason the castle is haunted is because of",
+        "and",
+        ", spirits that are both",
+        "and",
+        "."
+    ],
+    [
+        "The blacksmith\u0027s secret weapon against invaders is",
+        "and",
+        ", crafted with",
+        "and",
+        "precision."
+    ],
+    [
+        "The kingdom\u0027s curse can only be lifted by a hero armed with",
+        "and",
+        ", possessing both",
+        "and",
+        "qualities."
+    ],
+    [
+        "The castle library is said to contain a forbidden book on the secrets of",
+        "and",
+        ", knowledge both",
+        "and",
+        "."
+    ],
+    [
+        "The court alchemist is famous for creating potions that contain traces of",
+        "and",
+        ", promising effects both",
+        "and",
+        "."
+    ],
+    [
+        "The wise sage advises the young squire to seek the guidance of",
+        "and",
+        "on their quest, imparting",
+        "and",
+        "wisdom."
+    ],
+    [
+        "The royal proclamation declared a reward for the discovery of",
+        "and",
+        ", encouraging both",
+        "and",
+        "efforts."
+    ],
+    [
+        "The court jester\u0027s latest prank involved replacing the royal scepter with",
+        "and",
+        ", resulting in laughter both",
+        "and",
+        "."
+    ],
+    [
+        "The most notorious bandit in the land is known for stealing",
+        "and",
+        "from unsuspecting travelers, employing tactics both",
+        "and",
+        "."
+    ],
+    [
+        "The castle dungeon is notorious for its collection of forbidden",
+        "and",
+        ", objects both",
+        "and",
+        "."
+    ],
+    [
+        "The key to unlocking the castle\u0027s hidden chambers is",
+        "and",
+        ", requiring",
+        "and",
+        "skills."
+    ],
+    [
+        "The real reason cats secretly control the kingdom is",
+        "and",
+        ", attributes that are both",
+        "and",
+        "."
+    ],
+    [
+        "The secret society I want to be a part of is dedicated to",
+        "and",
+        ", principles both",
+        "and",
+        "."
+    ],
+    [
+        "The King\u0027s favorite pastime is",
+        "and",
+        ", indulging in activities both",
+        "and",
+        "."
+    ],
+    [
+        "In the medieval dating game, the key to a successful courtship is",
+        "and",
+        ", ensuring a connection both",
+        "and",
+        "."
+    ],
+    [
+        "The Knights of the Round Table are on a quest to find the legendary",
+        "and",
+        ", facing challenges both",
+        "and",
+        "."
+    ],
+    [
+        "The royal feast was ruined when someone accidentally added",
+        "and",
+        "to the soup, resulting in a taste both",
+        "and",
+        "."
+    ],
+    [
+        "The royal tapestries depict the epic battles between knights and",
+        "and",
+        ", showcasing scenes both",
+        "and",
+        "."
+    ],
+    [
+        "The most valuable trade commodity in the kingdom is",
+        "and",
+        ", items both",
+        "and",
+        "."
+    ],
+    [
+        "The village blacksmith is famous for crafting weapons made from",
+        "and",
+        ", creating tools both",
+        "and",
+        "."
+    ],
+    [
+        "The latest scientific breakthrough involves harnessing the power of",
+        "and",
+        ", methods both",
+        "and",
+        "."
+    ],
+    [
+        "The secret ingredient in the royal chef\u0027s stew is",
+        "and",
+        ", adding flavors both",
+        "and",
+        "."
+    ],
+    [
+        "The newest knight\u0027s armor is adorned with symbols of",
+        "and",
+        ", showcasing a design both",
+        "and",
+        "."
+    ],
+    [
+        "The court painter\u0027s masterpiece depicts a scene of",
+        "and",
+        ", capturing a moment both",
+        "and",
+        "."
+    ],
+    [
+        "The court minstrel\u0027s latest song recounts the legendary deeds of",
+        "and",
+        ", telling a story both",
+        "and",
+        "."
+    ],
+    [
+        "The kingdom\u0027s prosperity is said to be linked to the possession of",
+        "and",
+        ", treasures both",
+        "and",
+        "."
+    ],
+    [
+        "The real reason dragons hoard gold is to trade for",
+        "and",
+        ", treasures both",
+        "and",
+        "."
+    ],
+    [
+        "The royal stable master breeds horses with the speed of",
+        "and the strength of",
+        ", creating steeds both",
+        "and",
+        "."
+    ],
+    [
+        "The kingdom\u0027s seer predicts a future filled with",
+        "and",
+        ", events both",
+        "and",
+        "."
+    ],
+    [
+        "The troubadour composed a ballad about a quest for the elusive",
+        "and",
+        ", narrating a tale both",
+        "and",
+        "."
+    ],
+    [
+        "The castle\u0027s ghost is rumored to be searching for its lost",
+        "and",
+        ", seeking closure both",
+        "and",
+        "."
+    ],
+    [
+        "The best way to impress a princess is by presenting her with",
+        "and",
+        ", showcasing gestures both",
+        "and",
+        "."
+    ],
+    [
+        "The royal falconer is known for training birds to retrieve",
+        "and",
+        ", demonstrating skills both",
+        "and",
+        "."
+    ],
+    [
+        "The newest knight in the realm proved their skill by defeating a dragon with",
+        "and",
+        ", exhibiting bravery both",
+        "and",
+        "."
+    ],
+    [
+        "The court jester entertained the court with a performance involving",
+        "and",
+        ", delivering comedy both",
+        "and",
+        "."
+    ],
+    [
+        "The most notorious thief in the kingdom is known for stealing",
+        "and",
+        "from the royal treasury, executing schemes both",
+        "and",
+        "."
     ]
 ]
