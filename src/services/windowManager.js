@@ -5,6 +5,7 @@ module.exports = class WindowManager {
 
     }
 
+    config = require('../resources/json/generalConfig.json');
     win = null;
 
     CreateWindow() {
@@ -18,6 +19,10 @@ module.exports = class WindowManager {
         });
 
         this.win.maximize();
+
+        if (!this.config.debugMode) {
+            this.win.setMenu(null);
+        }
     }
 
     LoadMenu() {
