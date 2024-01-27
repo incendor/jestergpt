@@ -25,15 +25,15 @@ function addAudioEventListener() {
     });
 }
 
-function playPlayCardSound() {
-    console.log("Sound");
-    playCardSoundHandle.play();
-}
+function playAudioFile(files) {
+    console.log(arguments);
 
-function playUndoSound() {
-    undoSoundHandle.play();
-}
+    let file = arguments[Math.floor(Math.random() * arguments.length)];
 
-function playThinkingSound() {
-    thinkingSoundHandle.play();
+    let player = new Audio('../../resources/audio/' + file + '.mp3');
+    player.addEventListener("canplaythrough", (event) => {
+        /* the audio is now playable; play it if permissions allow */
+        player.play();
+    });
+
 }

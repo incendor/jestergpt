@@ -80,6 +80,7 @@ function drawCards() {
 }
 
 function renderCards() {
+    console.log(playerCards);
     let cardsMarkup = document.createElement("div");
     cardsMarkup.id = "game-view--game--ui--cards";
     for (let card in playerCards) {
@@ -109,7 +110,7 @@ function checkSubmitButtonState() {
 }
 
 function playCard(cardIndex, cardWrapper) {
-    playPlayCardSound();
+    playAudioFile("play_card");
     // Prüfen ob alle Lücken gefüllt
     if (currentPrompt.length - 2 < playedCards.length) {
         return;
@@ -135,7 +136,7 @@ function playCard(cardIndex, cardWrapper) {
 }
 
 function removePlayedCards() {
-    playUndoSound();
+    playAudioFile("undo");
     for (playedCard of playedCards) {
         playerCards.push(playedCard);
     }
@@ -176,10 +177,8 @@ function submitPrompt() {
     let time = performance.now();
 
     let prompt = getPromptString();
-    console.log("Evaluating:" + prompt);
 
     let result = GetPromptScore(prompt);
-    console.log(result);
 
     let time2 = performance.now();
     let elapsed = time2 - time;
@@ -215,41 +214,43 @@ function reset() {
 }
 
 function showAnimIdle() {
-    console.log("Idle");
     king.src = '../../resources/images/king_idle.gif';
 }
 
 function showAnimAngy() {
-    console.log("Angy");
     let randomNumber = Math.random();
+
 
     if (randomNumber < 0.33) {
         king.src = '../../resources/images/king_big_angry.gif';
+        playAudioFile("angy1", "angy1");
     }
     else if (randomNumber > 0.33 && randomNumber < 0.66) {
         king.src = '../../resources/images/king_sob.gif';
+        playAudioFile("sob1", "sob2");
     }
     else {
         king.src = '../../resources/images/king_sad.gif';
+        playAudioFile("sad1");
     }
 }
 
 function showAnimThink() {
-    playThinkingSound();
-    console.log("Thinking");
+    playAudioFile("thinking");
     king.src = '../../resources/images/king_think.gif';
 }
 
 function showAnimLaught() {
-    console.log("Laught");
 
     let randomNumber = Math.random();
 
     if (randomNumber < 0.33) {
         king.src = '../../resources/images/king_smile.gif';
+        playAudioFile("laugh1");
     }
     else if (randomNumber > 0.5) {
         king.src = '../../resources/images/king_funny_af.gif';
+        playAudioFile("giggle1", "giggle2");
     }
 
 }
