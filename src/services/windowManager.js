@@ -15,7 +15,8 @@ module.exports = class WindowManager {
             webPreferences: {
                 nodeIntegration: true,
                 contextIsolation: false,
-            }
+            },
+            icon: 'resources/images/icon_red.png'
         });
 
         this.win.maximize();
