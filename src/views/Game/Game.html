@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="../eventDispatcher.js"></script>
     <script src="../audioDispatcher.js"></script>
     <title>JesterGPT</title>
 </head>
 
 <body>
-    <input value="test" id="test_prompt" />
-    <button id="submit-prompt">Eval</button>
+    <div class="game-wrapper">
+        <div class="game-view--game">
+            <div class="game-view--game--background"></div>
+            <div class="game-view--game--ui">
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 
 </html>
