@@ -156,13 +156,13 @@ body button.image-button img {
   transform: rotate(-20deg);
 }
 .game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit {
-  cursor: not-allowed;
   background-image: url("../resources/images/send_closed.png");
   background-size: contain;
   right: 10px;
   bottom: 10px;
 }
 .game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit:disabled, .game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit:disabled:hover {
+  cursor: not-allowed;
   background-image: url("../resources/images/send_disabled.png");
 }
 .game-view--game--ui #game-view--game--ui--promt button#game-view--game--ui--promt--button--submit:hover {
