@@ -94,20 +94,55 @@ body button.image-button img {
   background-image: url(../resources/images/door_open.png);
 }
 
-#game-view--game--ui--promt {
+.game-view--game--background {
+  background-color: #9bb7c1;
+  height: 100vh;
+  width: 100vw;
+  display: fixed;
+  position: absolute;
+}
+
+.game-view--game--ui {
+  overflow: clip;
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.game-view--game--ui #game-view--game--ui--promt {
+  margin-bottom: auto;
   padding: 50px;
-  background-color: rgba(233, 156, 226, 0.1960784314);
+  background-color: #b691b3;
   display: flex;
   width: 600px;
   gap: 5px;
   flex-wrap: wrap;
 }
-#game-view--game--ui--promt .game-view--game--ui--promt--blank {
+.game-view--game--ui #game-view--game--ui--promt .game-view--game--ui--promt--blank {
   width: 100px;
   border-bottom: 2px solid black;
 }
-#game-view--game--ui--promt .game-view--game--ui--promt--blank.game-view--game--ui--promt--filled {
+.game-view--game--ui #game-view--game--ui--promt .game-view--game--ui--promt--blank.game-view--game--ui--promt--filled {
   width: auto;
+}
+.game-view--game--ui #game-view--game--ui--cards {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+.game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 24px 7px rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  padding: 15px;
+  width: 150px;
+  height: 200px;
+  background-color: white;
+}
+.game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:hover {
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=style.css.map */

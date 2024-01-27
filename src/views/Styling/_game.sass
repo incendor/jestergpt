@@ -1,12 +1,41 @@
-#game-view--game--ui--promt
-    padding: 50px
-    background-color: #e99ce232
+.game-view--game--background
+    background-color: #9bb7c1
+    height: 100vh
+    width: 100vw
+    display: fixed
+    position: absolute
+.game-view--game--ui
+    overflow: clip
+    position: relative
+    z-index: 5
+    height: 100vh
     display: flex
-    width: 600px
-    gap: 5px
-    flex-wrap: wrap
-    .game-view--game--ui--promt--blank
-        width: 100px
-        border-bottom: 2px solid black
-        &.game-view--game--ui--promt--filled
-            width: auto
+    flex-direction: column
+    #game-view--game--ui--promt
+        margin-bottom: auto
+        padding: 50px
+        background-color: #b691b3
+        display: flex
+        width: 600px
+        gap: 5px
+        flex-wrap: wrap
+        .game-view--game--ui--promt--blank
+            width: 100px
+            border-bottom: 2px solid black
+            &.game-view--game--ui--promt--filled
+                width: auto
+    #game-view--game--ui--cards
+        justify-content: center
+        gap: 10px
+        display: flex
+        .game-view--game--ui--cards-element
+            cursor: pointer
+            transition: all 0.3s ease
+            box-shadow: 0px 0px 24px 7px rgba(0,0,0,0.17)
+            border-radius: 5px
+            padding: 15px
+            width: 150px
+            height: 200px
+            background-color: white
+            &:hover
+                transform: scale(1.3)
