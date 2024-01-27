@@ -218,12 +218,18 @@ function showAnimIdle() {
 
 function showAnimAngy() {
     console.log("Angy");
-    king.src = '../../resources/images/king_big_angry.gif';
+    if (Math.random() > 0.5) {
+        king.src = '../../resources/images/king_big_angry.gif';
+    }
+    else {
+        king.src = '../../resources/images/king_sad.gif';
+
+    }
 }
 
 function showAnimThink() {
     console.log("Thinking");
-    king.src = '../../resources/images/king_big_angry.gif';
+    king.src = '../../resources/images/king_think.gif';
 }
 
 function showAnimLaught() {
