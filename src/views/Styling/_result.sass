@@ -1,0 +1,23 @@
+.game-view--result--background
+    background-size: contain
+    height: 100vh
+    width: 100vw
+    display: fixed
+    position: absolute
+    &.loose
+        background-image: url('../resources/images/killscreen.png')
+.game-view--result--bottombar
+    overflow: clip
+    gap: 30px
+    bottom: 20px
+    right: 20px
+    z-index: 5
+    position: absolute
+    display: flex
+    flex-direction: row
+    button
+        border-radius: 10px
+        padding: 10px 20px
+        font-family: inherit
+        font-size: 25px
+        &:hover
