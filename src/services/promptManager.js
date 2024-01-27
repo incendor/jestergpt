@@ -70,7 +70,8 @@ module.exports = class PromptManager {
         return count;
     }
 
-    ScorePrompt(prompt) {
-        console.log(prompt);
+    async ScorePrompt(prompt) {
+        let result = await this.GptManager.EvaluatePrompt(prompt);
+        console.log(result);
     }
 }

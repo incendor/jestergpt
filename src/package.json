@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "watch":"sass -w views/style.sass views/style.css"
+    "watch": "sass -w views/style.sass views/style.css"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "electron": "^28.2.0"
   },
   "dependencies": {
+    "node-fetch": "^2.7.0",
     "node-persist": "^4.0.1"
   }
 }
