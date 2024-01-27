@@ -228,5 +228,5 @@ function showAnimThink() {
 
 function showAnimLaught() {
     console.log("Laught");
-    king.src = '../../resources/images/king_big_angry.gif';
+    king.src = '../../resources/images/king_funny_af.gif';
 }

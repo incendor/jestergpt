@@ -1,5 +1,6 @@
 {
     "totalCards": 7,
+    "debugMode": true,
     "cardTypes": [
         {
             "file": "nouns.json",
