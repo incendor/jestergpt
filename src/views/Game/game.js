@@ -75,12 +75,12 @@ function renderPrompt() {
 function drawCards() {
     let drawnCards = DrawMissingCards(playerCards);
     for (let card of drawnCards) {
+        card.id = Math.floor(Math.random() * 100000000);
         playerCards.push(card);
     }
 }
 
 function renderCards() {
-    console.log(playerCards);
     let cardsMarkup = document.createElement("div");
     cardsMarkup.id = "game-view--game--ui--cards";
     for (let card in playerCards) {
@@ -88,8 +88,8 @@ function renderCards() {
         cardMarkup.classList.add("game-view--game--ui--cards-element")
         cardMarkup.innerText = playerCards[card].text;
         cardsMarkup.append(cardMarkup);
-
-        cardMarkup.addEventListener("click", (e) => playCard(card, cardMarkup));
+        let cardModel = playerCards[card];
+        cardMarkup.addEventListener("click", (e) => playCard(cardModel, cardMarkup));
     }
 
     if (document.querySelector('#game-view--game--ui--cards')) {
@@ -109,16 +109,15 @@ function checkSubmitButtonState() {
     }
 }
 
-function playCard(cardIndex, cardWrapper) {
+function playCard(cardToPlay, cardWrapper) {
     playAudioFile("play_card");
     // Prüfen ob alle Lücken gefüllt
     if (currentPrompt.length - 2 < playedCards.length) {
         return;
     }
 
-    let cardToPlay = playerCards[cardIndex];
     playedCards.push(cardToPlay);
-    playerCards.splice(cardIndex, 1);
+    playerCards.splice(playerCards.indexOf(cardToPlay), 1);
 
     // renderUi();
 

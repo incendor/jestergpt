@@ -26,8 +26,6 @@ function addAudioEventListener() {
 }
 
 function playAudioFile(files) {
-    console.log(arguments);
-
     let file = arguments[Math.floor(Math.random() * arguments.length)];
 
     let player = new Audio('../../resources/audio/' + file + '.mp3');
