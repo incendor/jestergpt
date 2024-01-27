@@ -3,6 +3,7 @@ let playedCards = [];
 let playerCards = [];
 let points = 0;
 let king = document.getElementById("king");
+let submitButton = null;
 let totalThinkingTime = 2500;
 let totalAngyTime = 2500;
 
@@ -52,6 +53,8 @@ function renderPrompt() {
     submitButtne.id = '#game-view--game--ui--promt--button--submit';
     submitButtne.classList.add('#game-view--game--ui--promt--button');
     submitButtne.innerText = "submit";
+    submitButtne.disabled = true;
+    submitButton = submitButtne;
 
 
     promptDisplay.append(resetButtne);
@@ -94,9 +97,18 @@ function renderCards() {
         document.querySelector('#game-view--game--ui--cards').remove();
     }
     document.querySelector('.game-view--game--ui').append(cardsMarkup);
+
+    checkSubmitButtonState();
 }
 
-
+function checkSubmitButtonState() {
+    if (currentPrompt.length - 2 < playedCards.length) {
+        submitButton.disabled = false;
+    }
+    else {
+        submitButton.disabled = true;
+    }
+}
 
 function playCard(cardIndex, cardWrapper) {
     // Prüfen ob alle Lücken gefüllt
@@ -119,6 +131,8 @@ function playCard(cardIndex, cardWrapper) {
     }, 300);
 
     renderPrompt();
+
+    checkSubmitButtonState();
 }
 
 function removePlayedCards() {
@@ -155,8 +169,8 @@ function getPromptString() {
 }
 
 function submitPrompt() {
-    // let swatch = new Stopwatch();
-    // swatch.start();
+    submitButton.disabled = true;
+
     showAnimThink();
 
     let time = performance.now();
@@ -165,12 +179,10 @@ function submitPrompt() {
     console.log("Evaluating:" + prompt);
 
     let result = GetPromptScore(prompt);
-    console.log(result);
 
     let time2 = performance.now();
     let elapsed = time2 - time;
     let remain = totalThinkingTime - elapsed;
-    console.log(remain);
 
     if (remain > 0) {
         setTimeout(() => evalScore(result), remain);
@@ -192,7 +204,6 @@ function evalScore(score) {
 }
 
 function reset() {
-    console.log("reset");
     showAnimIdle();
 
     playedCards = [];
