@@ -1,16 +1,15 @@
-let currentPrompt = null;
-let playedCards = [{ text: "bla", type: "noun" }];
+let currentPrompt = [];
+let playedCards = [];
 let playerCards = [];
 let points = 0;
 
 getPrompt();
 drawCards();
-
+renderUi();
 
 function getPrompt() {
     currentPrompt = GetNewPrompt();
-
-    renderPrompt();
+    console.log(currentPrompt);
 }
 
 function renderPrompt() {
@@ -46,8 +45,6 @@ function renderPrompt() {
         document.querySelector('#game-view--game--ui--promt').remove();
     }
     document.querySelector('.game-view--game--ui').prepend(promptDisplay);
-
-    console.log(promptDisplay);
 }
 
 function drawCards() {
@@ -55,11 +52,6 @@ function drawCards() {
     for (let card of drawnCards) {
         playerCards.push(card);
     }
-
-
-    console.log(playerCards);
-
-    renderCards();
 }
 
 function renderCards() {
@@ -69,8 +61,9 @@ function renderCards() {
         let cardMarkup = document.createElement("div");
         cardMarkup.classList.add("game-view--game--ui--cards-element")
         cardMarkup.innerText = playerCards[card].text;
-        cardMarkup.setAttribute('data-index', card);
         cardsMarkup.append(cardMarkup);
+
+        cardMarkup.addEventListener("click", (e) => playCard(card));
     }
 
     if (document.querySelector('#game-view--game--ui--cards')) {
@@ -82,5 +75,33 @@ function renderCards() {
 function submitPrompt() {
     let prompt = document.getElementById("test_prompt").value;
     let result = GetPromptScore(prompt);
-    console.log(result);
+}
+
+
+function playCard(cardIndex) {
+    // Prüfen ob alle Lücken gefüllt
+    if (currentPrompt.length - 2 < playedCards.length) {
+        return;
+    }
+
+    let cardToPlay = playerCards[cardIndex];
+    playedCards.push(cardToPlay);
+    playerCards.splice(cardIndex, 1);
+
+    renderUi();
+}
+
+function removePlayedCards() {
+    for (playedCard of playedCards) {
+        playerCards.push(playedCard);
+    }
+
+    playedCards = [];
+
+    renderUi();
+}
+
+function renderUi() {
+    renderPrompt();
+    renderCards();
 }
