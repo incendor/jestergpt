@@ -6,6 +6,7 @@ module.exports = class GptManager {
 
     fetch = require('node-fetch');
     Config = null;
+    gameConfig = require('../resources/json/generalConfig.json');
 
     async EvaluatePrompt(say) {
         let data = new URLSearchParams();
@@ -29,7 +30,7 @@ module.exports = class GptManager {
             if (item.label == "HUMOR") {
 
                 return {
-                    isFunny: item.score > 0.5,
+                    isFunny: item.score > this.gameConfig.sadThreshhold,
                     score: item.score
                 }
             }

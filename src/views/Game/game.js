@@ -218,12 +218,16 @@ function showAnimIdle() {
 
 function showAnimAngy() {
     console.log("Angy");
-    if (Math.random() > 0.5) {
+    let randomNumber = Math.random();
+
+    if (randomNumber < 0.33) {
         king.src = '../../resources/images/king_big_angry.gif';
+    }
+    else if (randomNumber > 0.33 && randomNumber < 0.66) {
+        king.src = '../../resources/images/king_sob.gif';
     }
     else {
         king.src = '../../resources/images/king_sad.gif';
-
     }
 }
 
