@@ -51,8 +51,10 @@ module.exports = class GameManager {
         this.IPC.on("getApiKey", async (event, data) => {
             event.returnValue = await this.ConfigManager.GetApiKey();
         });
-        this.IPC.on("getNewPrompt", async (event, data) => {
-            event.returnValue = await this.PromptManager.GetNewPrompt();
+        this.IPC.on("getNewPrompt", (event, data) => {
+            let result = this.PromptManager.GetNewPrompt();
+
+            event.returnValue = result;
         });
         this.IPC.on("drawMissingCards", async (event, data) => {
             event.returnValue = await this.PromptManager.DrawMissingCards(data);

@@ -27,10 +27,17 @@ module.exports = class GptManager {
         for (let lable in json[0]) {
             let item = json[0][lable];
             if (item.label == "HUMOR") {
-                return item.score > 0.5;
+
+                return {
+                    isFunny: item.score > 0.5,
+                    score: item.score
+                }
             }
         }
 
-        return false;
+        return {
+            isFunny: false,
+            score: 0
+        };
     }
 }

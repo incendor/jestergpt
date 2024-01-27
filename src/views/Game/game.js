@@ -59,5 +59,6 @@ function renderCards() {
 
 function submitPrompt() {
     let prompt = document.getElementById("test_prompt").value;
-    let score = GetPromptScore(prompt);
+    let result = GetPromptScore(prompt);
+    console.log(result);
 }
