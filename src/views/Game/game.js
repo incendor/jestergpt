@@ -260,13 +260,13 @@ function showAnimLaught() {
 
     let randomNumber = Math.random();
 
-    if (randomNumber < 0.33) {
+    if (randomNumber > 0.5) {
         king.src = '../../resources/images/king_smile.gif';
-        playAudioFile("laugh1", "evil_laught");
+        playAudioFile("laugh1");
     }
-    else if (randomNumber > 0.5) {
+    else {
         king.src = '../../resources/images/king_funny_af.gif';
-        playAudioFile("giggle1", "giggle2");
+        playAudioFile("giggle1", "giggle2", "evil_laught");
     }
 
 }

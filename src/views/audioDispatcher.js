@@ -9,7 +9,7 @@ if (mainTheme == null) {
 }
 if (introTheme == null) {
     introTheme = new Audio('../../resources/audio/intro.mp3');
-    addAudioEventListener();
+    // addAudioEventListener();
 }
 
 
