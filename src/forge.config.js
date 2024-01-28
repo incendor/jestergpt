@@ -1,6 +1,8 @@
 module.exports = {
   packagerConfig: {
     asar: true,
+    name: 'JesterGpt',
+    icon: 'favicon.ico'
   },
   rebuildConfig: {},
   makers: [
@@ -14,7 +16,11 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options: {
+          icon: 'favicon.ico'
+        }
+      },
     },
     {
       name: '@electron-forge/maker-rpm',
