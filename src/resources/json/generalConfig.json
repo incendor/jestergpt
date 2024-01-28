@@ -1,9 +1,10 @@
 {
     "totalCards": 7,
-    "debugMode": true,
+    "debugMode": false,
     "sadThreshhold": 0.5,
     "liveAmount": 3,
     "maxRounds": 6,
+    "fullScreen": true,
     "cardTypes": [
         {
             "file": "nouns.json",
