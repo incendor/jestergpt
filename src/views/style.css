@@ -107,18 +107,23 @@ body button.image-button img {
 }
 
 .game-view--menu--configure {
+  background-color: white;
+  border-radius: 10px;
   display: flex;
+  width: 40%;
+  padding: 20px 20px 40px 20px;
   flex-direction: column;
 }
 .game-view--menu--configure .game-view--menu--configure--buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .game-view--menu--configure #api_key {
   padding: 10px;
   border-radius: 10px;
-  width: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .game-view--game--background {
