@@ -9,3 +9,5 @@ say.addEventListener("click", () => {
 
 
 input.value = getApiKey();
+
+registerEventDispatcher("btn_cancel", "click", "changeScene", { scene: "MainMenu" });

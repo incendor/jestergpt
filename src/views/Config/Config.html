@@ -5,16 +5,30 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="../eventDispatcher.js"></script>
     <script src="../audioDispatcher.js"></script>
     <title>JesterGPT</title>
 </head>
 
 <body>
-    <div>
-        <div><input id="api_key" /></div>
-        <div><button id="btn_save_key">Speicher</button></div>
+    <div class="game-wrapper">
+        <div class="game-view--menu">
+            <div class="game-view--menu--background"></div>
+            <div class="game-view--menu--ui">
+                <div class="game-view--menu--configure">
+                    <h3>API Key</h3>
+                    <p>Go to huggingface and blablablabalbala <a target="_blank" href="https://http.cat/">look ad these
+                            caddos</a>
+                        hsadlöfjsa sahdföls a sadhfösad fösadfjsaödf ahsdöflksa hsadkfhölsdaljfjfjfjfj fjfjfj</p>
+                    <div><input id="api_key" /></div>
+                    <div class="game-view--menu--configure--buttons">
+                        <button id="btn_cancel" class="actual-button">Cancel</button>
+                        <button id="btn_save_key" class="actual-button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
