@@ -272,6 +272,8 @@ body button.image-button img {
   position: absolute;
   top: 2px;
   right: 2px;
+  width: 3vw;
+  height: 3vw;
 }
 .game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:nth-child(odd)::after {
   content: "";
@@ -280,6 +282,8 @@ body button.image-button img {
   position: absolute;
   top: 2px;
   right: 2px;
+  width: 3vw;
+  height: 3vw;
 }
 .game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:hover {
   transform: scale(1.3);
