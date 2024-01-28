@@ -16,7 +16,8 @@ module.exports = class WindowManager {
                 nodeIntegration: true,
                 contextIsolation: false,
             },
-            icon: 'favicon.ico'
+            icon: 'favicon.ico',
+            fullscreen: this.config.fullScreen
         });
 
         this.win.maximize();
