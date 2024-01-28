@@ -29,12 +29,16 @@
         gap: 10px
         display: flex
         .game-view--game--background--life--dude
-            background-image: url('../resources/images/scoreDudePos.png')
+            background-image: url('../resources/images/scoreDudePosA.gif')
             background-size: contain
             height: 260px
             width: 130px
+            &:nth-child(odd)
+                background-image: url('../resources/images/scoreDudePosB.gif')
+                &.upset
+                    background-image: url('../resources/images/scoreDudeNegB.gif')
             &.upset
-                background-image: url('../resources/images/scoreDudeNeg.png')
+                background-image: url('../resources/images/scoreDudeNegA.gif')
 .game-view--game--ui
     overflow: clip
     position: relative

@@ -161,13 +161,19 @@ body button.image-button img {
   display: flex;
 }
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude {
-  background-image: url("../resources/images/scoreDudePos.png");
+  background-image: url("../resources/images/scoreDudePosA.gif");
   background-size: contain;
   height: 260px;
   width: 130px;
 }
+.game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude:nth-child(odd) {
+  background-image: url("../resources/images/scoreDudePosB.gif");
+}
+.game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude:nth-child(odd).upset {
+  background-image: url("../resources/images/scoreDudeNegB.gif");
+}
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude.upset {
-  background-image: url("../resources/images/scoreDudeNeg.png");
+  background-image: url("../resources/images/scoreDudeNegA.gif");
 }
 
 .game-view--game--ui {
