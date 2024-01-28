@@ -148,12 +148,14 @@ body button.image-button img {
 }
 .game-view--game--background #king {
   position: absolute;
-  height: 300px;
+  height: 40vh;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .game-view--game--background .game-view--game--background--life {
+  z-index: 2;
   position: absolute;
   bottom: 50%;
   right: 5%;
@@ -163,8 +165,8 @@ body button.image-button img {
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude {
   background-image: url("../resources/images/scoreDudePosA.gif");
   background-size: contain;
-  height: 260px;
-  width: 130px;
+  height: 34vh;
+  width: 17vh;
 }
 .game-view--game--background .game-view--game--background--life .game-view--game--background--life--dude:nth-child(odd) {
   background-image: url("../resources/images/scoreDudePosB.gif");
