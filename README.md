@@ -33,4 +33,4 @@ Disclaimer: In order to play this game, an account and FREE API key from [huggin
 - Run `npm start`
 
 Run SASS File Watcher
-- Run `npm run watch` in the src directory
+- Run `npm run watch` in the `src` directory
