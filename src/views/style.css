@@ -14,6 +14,12 @@ body .game-wrapper {
 body button {
   cursor: url(../resources/images/hand.png), auto;
 }
+body button.actual-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 25px;
+}
 body button.icon-button {
   background-size: cover;
   height: 60px;
@@ -98,6 +104,21 @@ body button.image-button img {
 }
 #btn_quit:hover {
   background-image: url(../resources/images/door_open.png);
+}
+
+.game-view--menu--configure {
+  display: flex;
+  flex-direction: column;
+}
+.game-view--menu--configure .game-view--menu--configure--buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.game-view--menu--configure #api_key {
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
 }
 
 .game-view--game--background {
