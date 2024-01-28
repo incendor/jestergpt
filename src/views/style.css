@@ -134,6 +134,18 @@ body button.image-button img {
   display: fixed;
   position: absolute;
 }
+.game-view--game--background #exit-sign {
+  cursor: url(../resources/images/hand.png), auto;
+  z-index: 90000000;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+.game-view--game--background #exit-sign:hover {
+  transform: scale(1.3);
+}
 .game-view--game--background #king {
   position: absolute;
   height: 300px;
@@ -319,7 +331,12 @@ body button.image-button img {
   position: absolute;
 }
 .game-view--result--background.loose {
-  background-image: url("../resources/images/killscreen.png");
+  background: url("../resources/images/lose_screen_anim.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+.game-view--result--background.win {
+  background: url("../resources/images/win_screen_anim.gif") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .game-view--result--bottombar {
@@ -331,12 +348,6 @@ body button.image-button img {
   position: absolute;
   display: flex;
   flex-direction: row;
-}
-.game-view--result--bottombar button {
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-family: inherit;
-  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

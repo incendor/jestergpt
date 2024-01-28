@@ -300,3 +300,5 @@ function lose() {
     console.log("lose");
     NavigateTo("Lose");
 }
+
+registerEventDispatcher("exit-sign", "click", "changeScene", { scene: "MainMenu" });
