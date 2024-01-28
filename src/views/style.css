@@ -75,6 +75,16 @@ body button.image-button img {
   flex-wrap: nowrap;
   align-items: center;
 }
+.game-view--menu .game-view--menu--ui .game-view--menu--ui--credits {
+  transform: scale(0.8);
+  position: absolute;
+  background-color: white;
+  top: 35vh !important;
+  right: 5vh !important;
+  margin: 0 !important;
+  border-radius: 10px;
+  padding: 15px;
+}
 .game-view--menu .game-view--menu--ui .game-view--menu--ui--logo {
   width: 50%;
 }
@@ -272,8 +282,8 @@ body button.image-button img {
   position: absolute;
   top: 2px;
   right: 2px;
-  width: 3vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2vw;
 }
 .game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:nth-child(odd)::after {
   content: "";
@@ -282,8 +292,8 @@ body button.image-button img {
   position: absolute;
   top: 2px;
   right: 2px;
-  width: 3vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2vw;
 }
 .game-view--game--ui #game-view--game--ui--cards .game-view--game--ui--cards-element:hover {
   transform: scale(1.3);
